@@ -187,7 +187,20 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
 }
-
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none    ;
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 581px;
+    min-width: 528px;
+    padding: 40px;
+    background-color: var(--background-colour);
+}
 /* button */
 .modal-button {
     color: var(--background-colour);
