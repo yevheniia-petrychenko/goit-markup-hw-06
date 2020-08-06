@@ -49,7 +49,40 @@
                 <button data-modal-open class="modal-button" type="button">Заказать услугу</button>
                 <div data-modal class="backdrop is-hidden">
                   <div class="modal">
-                      <button data-modal-close>Отправить</button>
+                      <form class="form">
+                          <h2 class="form-header">Оставьте свои данные, мы вам перезвоним</h2>
+                          <button  data-modal-close type="button" class="close-btn">
+                            <svg class="close-icon" width=11 height=11> 
+                                <use href="./images/sprite.svg#icon-close"></use>
+                            </svg>  
+                          </button>
+                            <div class="form-field">
+                                <input type="text" name="name" id="name" placeholder=" " class="form-input" />
+                                <label for="name" class="form-label">Имя</label>
+                            </div>
+                            <div class="form-field">
+                                <input type="tel" name="tel" placeholder=" " id="tel" class="form-input"/>
+                                <label for="tel" class="form-label">Телефон</label>
+                            </div>
+                            <div class="form-field">
+                                <input type="email" name="email" placeholder=" " id="email" class="form-input"/>
+                                <label for="email" class="form-label">Почта</label>
+                            </div>
+                            <div class="form-field">
+                                <textarea name="comment" id="comment" cols="30" class="comment"></textarea>
+                                <label for="comment" class="form-label">Комментарий</label>
+                            </div>
+                            <label class="form-field"></label>
+                                <input type="checkbox" name="policy" id="policy">
+                                </a>
+                                <span class="policy">
+                                    Соглашаюсь с рассылкой и принимаю 
+                                    <a href="">Условия договора</a>
+                                </span>
+                            </label>
+                            <button class="apply-button" type="submit">Отправить</button>
+                      </form>
+
                   </div>
                 </div>
             </section>
@@ -351,13 +384,18 @@
                     </li>
                 </ul>
             </div>
-            <b class="appeal">подпишитесь на рассылку</b>
-                <button class="button1" type="submit">
-                    Подписаться
-                    <svg class="button-icon" width=24 height=24> 
-                        <use href="./images/sprite.svg#icon-send"></use>
-                    </svg>
-                </button>
+            <div>
+                <b class="appeal">подпишитесь на рассылку</b>
+                <form class="footer-form">
+                    <input type="email" placeholder="E-mail" class="footer-input">
+                    <button class="button1" type="submit">
+                        Подписаться
+                        <svg class="button-icon" width=24 height=24> 
+                            <use href="./images/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
     <script src="./js/modal.js"></script>
