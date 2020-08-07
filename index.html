@@ -50,13 +50,13 @@
             <!-- modal window -->
                 <div data-modal class="backdrop is-hidden">
                   <div class="modal">
+                    <button  data-modal-close type="button" class="close-btn">
+                        <svg class="close-icon" width=11 height=11> 
+                            <use href="./images/sprite.svg#icon-close"></use>
+                        </svg>  
+                    </button>
                       <form class="form">
                           <h2 class="form-header">Оставьте свои данные, мы вам перезвоним</h2>
-                          <button  data-modal-close type="button" class="close-btn">
-                            <svg class="close-icon" width=11 height=11> 
-                                <use href="./images/sprite.svg#icon-close"></use>
-                            </svg>  
-                          </button>
                             <div class="form-field">
                                 <input type="text" name="name" id="name" placeholder=" " class="form-input" required />
                                 <label for="name" class="form-label">Имя</label>
@@ -65,7 +65,7 @@
                                 </svg> 
                             </div>
                             <div class="form-field">
-                                <input type="tel" name="tel" placeholder=" " id="tel" class="form-input"required />
+                                <input type="tel" name="tel" placeholder=" " id="tel" class="form-input" required />
                                 <label for="tel" class="form-label">Телефон</label>
                                 <svg class="modal-icon" width=18 height=18> 
                                     <use href="./images/sprite.svg#icon-tel"></use>
@@ -83,7 +83,7 @@
                                 <label for="comment" class="form-label text">Комментарий</label>
                             </div>
                             <label class="checkbox-field">
-                                <input type="checkbox" name="policy" id="policy" class="checkbox"required >
+                                <input type="checkbox" name="policy" id="policy" class="checkbox" required >
                                 <span class="custom-checkbox"></span>
                                 <span class="policy">
                                     Соглашаюсь с рассылкой и принимаю 
