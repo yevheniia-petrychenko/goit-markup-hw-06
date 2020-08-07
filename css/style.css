@@ -200,7 +200,7 @@ body {
     min-width: 528px;
     padding: 40px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px
+    border-radius: 4px;
     background-color: var(--background-colour);
 }
 
@@ -273,7 +273,7 @@ font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.01em;
 color: var(--background-button-color);
-transition: 250ms linear;
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:hover,
@@ -295,6 +295,7 @@ transition: 250ms linear;
     border: 1px solid rgba(33, 33, 33, 0.2);
     padding: 12px 16px;
     color: var(--primary-text-colour);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comment:hover,
 .comment:focus {
@@ -303,7 +304,7 @@ transition: 250ms linear;
 }
 
 .comment:focus + .text {
-    transform: translateY(-40px) translateX(-35px);
+    transform: translateY(-40px);
     color: var(--accent-colour);
 }
 .form-field .text {
@@ -333,6 +334,7 @@ transition: 250ms linear;
     border: 2px solid var(--title-text-colour);
     border-radius: 2px;
     margin-right: 9px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox:checked + .custom-checkbox {
     background-color: var(--accent-colour);
@@ -355,6 +357,7 @@ transition: 250ms linear;
     top: 11px;
     left: 16px;
     display: inline-block;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus ~ .modal-icon {
@@ -662,7 +665,7 @@ margin-left: 10px;
     letter-spacing: 0.06em;
     text-decoration: none;
     color: var(--background-colour);
-    background-color: var(--accent-colour);
+    background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
